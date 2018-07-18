@@ -1,0 +1,8 @@
+mvn clean package -DskipTests -Dmaven.test.skip=true
+/dev/tomee/webapps
+
+cp target/moviefun.war "/dev/tomee/webapps"
+
+https://moviefun-insightful-manatee.apps.pikes.pal.pivotal.io/
+
+MOVIE_FUN_URL=https://moviefun-insightful-manatee.apps.pikes.pal.pivotal.io mvn test
